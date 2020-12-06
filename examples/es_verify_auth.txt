@@ -1,0 +1,84 @@
+$ python strafer.py 94.250.XX.YY 9200 verify_auth
+	-----------------------------------------------------------
+  
+
+
+		   _____  __                ____           
+		  / ___/ / /_ _____ ____ _ / __/___   _____
+		  \__ \ / __// ___// __ `// /_ / _ \ / ___/
+		 ___/ // /_ / /   / /_/ // __//  __// /    
+		/____/ \__//_/    \__,_//_/   \___//_/     
+                                           
+
+	STRAFER : A Tool to Detect Potential Infections in ElasticSearch Deployments !
+        Authored by: Aditya K Sood {https://adityaksood.com} 
+        
+	----------------------------------------------------------
+[*] [------------------------------------------------------------]
+[*] [     ELASTICSEARCH Infections / Honeypot Detection Tool     ]
+[*] [------------------------------------------------------------]
+
+
+[#] Checking the <GEOIP> status of the Elasticsearch instance ......
+[*] Elasticsearch instance is located in <US> | <America/Los_Angeles>
+
+[*] elasticsearch url is constructed as: 94.250.XX.YY:9200
+
+[*] validating authentication: if interface is open to access..
+
+[*] authentication is not in  place for the elasticsearch instance: http://94.250.XX.YY:9200/
+
+[*] security exception occurred: missing authentication credentials
+
+{"error":{"root_cause":[{"type":"security_exception","reason":"missing authentication credentials for REST request [/]","header":{"WWW-Authenticate":"Basic realm=\"security\" charset=\"UTF-8\""}}],"type":"security_exception","reason":"missing authentication credentials for REST request [/]","header":{"WWW-Authenticate":"Basic realm=\"security\" charset=\"UTF-8\""}},"status":401}
+[*] -------------------------------------------------------------------------
+
+$ python strafer.py 121.196.XX.YY 9200 verify_auth
+	-----------------------------------------------------------
+  
+
+
+		   _____  __                ____           
+		  / ___/ / /_ _____ ____ _ / __/___   _____
+		  \__ \ / __// ___// __ `// /_ / _ \ / ___/
+		 ___/ // /_ / /   / /_/ // __//  __// /    
+		/____/ \__//_/    \__,_//_/   \___//_/     
+                                           
+
+	STRAFER : A Tool to Detect Potential Infections in ElasticSearch Deployments !
+        Authored by: Aditya K Sood {https://adityaksood.com} 
+        
+	----------------------------------------------------------
+[*] [------------------------------------------------------------]
+[*] [     ELASTICSEARCH Infections / Honeypot Detection Tool     ]
+[*] [------------------------------------------------------------]
+
+
+[#] Checking the <GEOIP> status of the Elasticsearch instance ......
+[*] Elasticsearch instance is located in <US> | <America/Los_Angeles>
+
+[*] elasticsearch url is constructed as: 121.196.XX.YY:9200
+
+[*] validating authentication: if interface is open to access..
+
+[*] seems like the elasticsearch interface is exposed....
+
+[*] valid URL configuration is: http://121.196.XX.YY:9200/
+
+{
+  "name" : "node-1",
+  "cluster_name" : "yuanpinhui",
+  "cluster_uuid" : "dBVOQcaVSkC7Dh25WB97tw",
+  "version" : {
+    "number" : "7.10.0",
+    "build_flavor" : "default",
+    "build_type" : "tar",
+    "build_hash" : "51e9d6f22758d0374a0f3f5c6e8f3a7997850f96",
+    "build_date" : "2020-11-09T21:30:33.964949Z",
+    "build_snapshot" : false,
+    "lucene_version" : "8.7.0",
+    "minimum_wire_compatibility_version" : "6.8.0",
+    "minimum_index_compatibility_version" : "6.0.0-beta1"
+  },
+  "tagline" : "You Know, for Search"
+}

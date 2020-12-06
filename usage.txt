@@ -1,0 +1,26 @@
+$ python strafer.py 
+	-----------------------------------------------------------
+  
+
+
+		   _____  __                ____           
+		  / ___/ / /_ _____ ____ _ / __/___   _____
+		  \__ \ / __// ___// __ `// /_ / _ \ / ___/
+		 ___/ // /_ / /   / /_/ // __//  __// /    
+		/____/ \__//_/    \__,_//_/   \___//_/     
+                                           
+
+	STRAFER : A Tool to Detect Potential Infections in ElasticSearch Deployments !
+        Authored by: Aditya K Sood {https://adityaksood.com} 
+        
+	----------------------------------------------------------
+[-] usage: strafer.py <elasticsearch_host (local or remote)> <elasticsearch service port> <module_name>
+[*] modules: [verify_auth] | [ransomware] | [meow_bot] | [eshoney_hp] [espot_hp]
+[*]      : verify_auth --> check if elasticsearch interface is <EXPOSED>
+[*]      : ransomware --> check potential <RANSOMWARE> infections
+[*]      : meow_bot --> check for potential <MEOW BOT> infections
+[*]      : eshoney_hp --> check if the elasticsearch instance is <ELASTICHONEY> honeynet
+[*]	 : espot_hp --> check if the elasticsearch instance is <ELASTICPOT> honeypot
+
+[*] example: strafer.py 127.0.0.1 9200 ransomware
+

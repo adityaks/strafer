@@ -1,0 +1,47 @@
+$ python strafer.py 35.154.XX.YY 9200 ransomware
+	-----------------------------------------------------------
+  
+
+
+		   _____  __                ____           
+		  / ___/ / /_ _____ ____ _ / __/___   _____
+		  \__ \ / __// ___// __ `// /_ / _ \ / ___/
+		 ___/ // /_ / /   / /_/ // __//  __// /    
+		/____/ \__//_/    \__,_//_/   \___//_/     
+                                           
+
+	STRAFER : A Tool to Detect Potential Infections in ElasticSearch Deployments !
+        Authored by: Aditya K Sood {https://adityaksood.com} 
+        
+	----------------------------------------------------------
+[*] [------------------------------------------------------------]
+[*] [     ELASTICSEARCH Infections / Honeypot Detection Tool     ]
+[*] [------------------------------------------------------------]
+
+
+[#] Checking the <GEOIP> status of the Elasticsearch instance ......
+[*] Elasticsearch instance is located in <US> | <America/Los_Angeles>
+
+[*] elasticsearch url is constructed as: 35.154.XX.YY:9200
+
+[*] dumping the search index info to check ransom demand ........
+[*] sending request to the source index to analyze the ransomware asks by the malware operator .......
+[*] valid URL configuration is: http://35.154.XX.YY:9200/_search?pretty=true
+
+[#] ransomware warning message text pattern matched | pattern - (bitcoin)
+[#] ransomware warning message text pattern matched | pattern - (index:read_me)
+[#] ransomware warning message text pattern matched | pattern - (data backed up)
+[#] ransomware warning message text pattern matched | pattern - (bitcoin_account_identifier)
+[#] -----------------------------------------------------------------------
+[#] -------- [Elasticsearch Ransomware Infection - Highly Probable] -------
+[#] -----------------------------------------------------------------------
+[#] Dumping the full data ......................
+
+hits {u'hits': [{u'_score': 1.0, u'_type': u'_doc', u'_id': u'config:7.4.0', u'_source': {u'type': u'config', u'config': {u'buildNum': 26392}, u'updated_at': u'2020-11-10T18:06:57.633Z'}, u'_index': u'.kibana'}, {u'_score': 1.0, u'_type': u'_doc', u'_id': u'1', u'_source': {u'message': u'All your data is a backed up. You must pay 0.04 BTC to 14Ru3Kvvy7G1GSFKS4RXeDKC4KazFDwppy 48 hours for recover it. After 48 hours expiration we will leaked and exposed all your data. In case of refusal to pay, we will contact the General Data Protection Regulation, GDPR and notify them that you store user data in an open form and is not safe. Under the rules of the law, you face a heavy fine or arrest and your base dump will be dropped from our server! You can buy bitcoin here, does not take much time to buy https://localbitcoins.com with this guide https://localbitcoins.com/guides/how-to-buy-bitcoins After paying write to me in the mail with your DB IP: recoverdb@mailnesia.com and you will receive a link to download your database dump.'}, u'_index': u'read_me'}], u'total': {u'relation': u'eq', u'value': 2}, u'max_score': 1.0}
+_shards {u'successful': 2, u'failed': 0, u'skipped': 0, u'total': 2}
+took 0
+timed_out False
+
+[*] request processed successfully ! exiting !
+
+

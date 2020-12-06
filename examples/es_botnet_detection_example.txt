@@ -1,0 +1,57 @@
+$ python strafer.py 47.98.XX.YY 9200 meow_bot
+	-----------------------------------------------------------
+  
+
+
+		   _____  __                ____           
+		  / ___/ / /_ _____ ____ _ / __/___   _____
+		  \__ \ / __// ___// __ `// /_ / _ \ / ___/
+		 ___/ // /_ / /   / /_/ // __//  __// /    
+		/____/ \__//_/    \__,_//_/   \___//_/     
+                                           
+
+	STRAFER : A Tool to Detect Potential Infections in ElasticSearch Deployments !
+        Authored by: Aditya K Sood {https://adityaksood.com} 
+        
+	----------------------------------------------------------
+[*] [------------------------------------------------------------]
+[*] [     ELASTICSEARCH Infections / Honeypot Detection Tool     ]
+[*] [------------------------------------------------------------]
+
+
+[#] Checking the <GEOIP> status of the Elasticsearch instance ......
+[*] Elasticsearch instance is located in <US> | <America/Los_Angeles>
+
+[*] elasticsearch url is constructed as: 47.98.XX.YY:9200
+
+
+
+[*] executing detection logic for checking [MEOW Bot]  infections  ...........
+
+[*] valid URL configuration is: http://47.98.XX.YY:9200/_cat/indices?v&health=yellow
+
+[#] detected indices are in yellow state ... potential missing replica shards
+[#] despite in yellow state, indices support open operation
+[#] detected infection indicator of botnet infection....---- meow botnet
+[#] health in yellow detected for indices are in open state with botnet infection signature
+[#] Indices are infected. Potential data destruction occured, check your indices and stored data
+
+[#] ------------------------ [MEOW BOTNET INFECTION DETECTED] ----------------------------------
+
+
+health status index           uuid                   pri rep docs.count docs.deleted store.size pri.store.size
+yellow open   .kibana         QD-QeLU7ThKVf9yQphuScg   1   1          1            0        4kb            4kb
+yellow open   4fwi9st42u-meow uOuhpgsfRBSUVKr-JtGavA   1   1          0            0       283b           283b
+yellow open   wpendns4be-meow 5Ejfpf3xTTO-95CgObYL0A   1   1          0            0       283b           283b
+yellow open   b3sxksmbsh-meow vEAalKUdSamQBlqwC_-tYA   1   1          0            0       283b           283b
+yellow open   ak3v2d9bva-meow F1HfEa--T9aVacLgJurbWg   1   1          0            0       283b           283b
+yellow open   tj1ya6ldph-meow 7gD8GGGVRtuaSWaXKzzYkA   1   1          0            0       283b           283b
+yellow open   d83rbdhq6x-meow XPKl4dbCSkmpCgTN2M9LjA   1   1          0            0       283b           283b
+yellow open   oigdrgm3tn-meow eu7urXvuQHS9eXMTfle3Ng   1   1          0            0       283b           283b
+yellow open   users           S-hY0ioYREGuH10Va8drHw   1   1          2            0      8.4kb          8.4kb
+yellow open   nncir8xw0d-meow LlIoNLWYQROxAiwy62Ztbg   1   1          0            0       283b           283b
+yellow open   mwiu09xvc0-meow dEvhh7HCS0eUjKe2NxiRjg   1   1          0            0       283b           283b
+
+
+[*] request processed successfully ! exiting !
+

@@ -1,0 +1,56 @@
+$ python strafer.py 67.205.XX.YY 9200 eshoney_hp
+	-----------------------------------------------------------
+  
+
+
+		   _____  __                ____           
+		  / ___/ / /_ _____ ____ _ / __/___   _____
+		  \__ \ / __// ___// __ `// /_ / _ \ / ___/
+		 ___/ // /_ / /   / /_/ // __//  __// /    
+		/____/ \__//_/    \__,_//_/   \___//_/     
+                                           
+
+	STRAFER : A Tool to Detect Potential Infections in ElasticSearch Deployments !
+        Authored by: Aditya K Sood {https://adityaksood.com} 
+        
+	----------------------------------------------------------
+[*] [------------------------------------------------------------]
+[*] [     ELASTICSEARCH Infections / Honeypot Detection Tool     ]
+[*] [------------------------------------------------------------]
+
+
+[#] Checking the <GEOIP> status of the Elasticsearch instance ......
+[*] Elasticsearch instance is located in <US> | <America/Los_Angeles>
+
+[*] elasticsearch url is constructed as: 67.205.XX.YY:9200
+
+[*] starting ---[ROUND 1]--- detecting indicators for Elastisearch ELASTICHONEY Honeypot..........
+[*] valid URL configuration is: http://67.205.XX.YY:9200/
+
+[#] detected buildhash for elastichoney: (build_hash: b88f43fc40b0bcd7f173a1f9ee2e97816de80b19)
+[#] detected hardcoded name for elastichoney: (name: USNYES)
+
+[#] ------------------------ [Elasticsearch <ELASTICHONEY> Honeypot Detected] ----------------------------------
+
+
+[*] starting ---[ROUND 2]--- detecting indicators for Elastisearch ELASTICHONEY Honeypot..........
+[*] valid URL configuration is: http://67.205.XX.YY:9200/_security/_authenticate
+
+[#] detected specific indicator for elastichoney <index_not_found_exception> occured for: _security/_authenticate resource -- STRANGE!
+[#] detected specific indicator for elastichoney <400> occured for: _security/_authenticate resource -- STRANGE!
+
+[#] ------------------------ [Elasticsearch <ELASTICHONEY> Honeypot Detected] ----------------------------------
+
+
+[*] starting ---[ROUND 3]--- detecting indicators for Elastisearch ELASTICHONEY Honeypot.........
+[*] valid URL configuration is: http://67.205.XX.YY:9200/_cat/indices
+
+[#] detected index for elastichoney: (index_name: 1cf0aa9d61f185b59f643939f862c01f89b21360)
+[#] detected index for elastichoney: (index_name: db18744ea5570fa9bf868df44fecd4b58332ff24)
+
+[#] ------------------------ [Elasticsearch <ELASTICHONEY> Honeypot Detected] ----------------------------------
+
+
+
+[*] request processed successfully ! exiting !
+

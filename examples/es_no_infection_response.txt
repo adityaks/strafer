@@ -1,0 +1,78 @@
+$ python strafer.py 67.205.87.77 9200 ransomware
+	-----------------------------------------------------------
+  
+
+
+		   _____  __                ____           
+		  / ___/ / /_ _____ ____ _ / __/___   _____
+		  \__ \ / __// ___// __ `// /_ / _ \ / ___/
+		 ___/ // /_ / /   / /_/ // __//  __// /    
+		/____/ \__//_/    \__,_//_/   \___//_/     
+                                           
+
+	STRAFER : A Tool to Detect Potential Infections in ElasticSearch Deployments !
+        Authored by: Aditya K Sood {https://adityaksood.com} 
+        
+	----------------------------------------------------------
+[*] [------------------------------------------------------------]
+[*] [     ELASTICSEARCH Infections / Honeypot Detection Tool     ]
+[*] [------------------------------------------------------------]
+
+
+[#] Checking the <GEOIP> status of the Elasticsearch instance ......
+[*] Elasticsearch instance is located in <CA> | <America/Toronto>
+
+[*] elasticsearch url is constructed as: 67.205.87.77:9200
+
+[*] dumping the search index info to check ransom demand ........
+[*] sending request to the source index to analyze the ransomware asks by the malware operator .......
+[*] valid URL configuration is: http://67.205.87.77:9200/_search?pretty=true
+
+[#] halting the detection logic, ransomware infection probability very low......
+
+[#] -----------------[ No RANSOMWARE NOTIFICATION/DISCLAIMER Traces Detected ] -------------------
+
+
+[*] request processed successfully ! exiting !
+
+------------------------------------------------------------------------------------------------------------------------
+
+$ python strafer.py 67.205.87.77 9200 meow_bot
+	-----------------------------------------------------------
+  
+
+
+		   _____  __                ____           
+		  / ___/ / /_ _____ ____ _ / __/___   _____
+		  \__ \ / __// ___// __ `// /_ / _ \ / ___/
+		 ___/ // /_ / /   / /_/ // __//  __// /    
+		/____/ \__//_/    \__,_//_/   \___//_/     
+                                           
+
+	STRAFER : A Tool to Detect Potential Infections in ElasticSearch Deployments !
+        Authored by: Aditya K Sood {https://adityaksood.com} 
+        
+	----------------------------------------------------------
+[*] [------------------------------------------------------------]
+[*] [     ELASTICSEARCH Infections / Honeypot Detection Tool     ]
+[*] [------------------------------------------------------------]
+
+
+[#] Checking the <GEOIP> status of the Elasticsearch instance ......
+[*] Elasticsearch instance is located in <CA> | <America/Toronto>
+
+[*] elasticsearch url is constructed as: 67.205.87.77:9200
+
+
+
+[*] executing detection logic for checking [MEOW Bot]  infections  ...........
+
+[*] valid URL configuration is: http://67.205.87.77:9200/_cat/indices?v&health=yellow
+
+[#] detected indices are in yellow state ... potential missing replica shards
+[#] despite in yellow state, indices support open operation
+[#] ---------------[ No Infections Detected ] ----------------------------
+
+
+[*] request processed successfully ! exiting !
+

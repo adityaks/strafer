@@ -13,3 +13,5 @@ Elasticsearch infections are rising exponentially. The adversaries are exploitin
 * Detecting Elasticsearch honeypots
 
 Note: This is the first release of the tool and we expect to add more modules in the nearby future.
+
+Researched and Developed By: Aditya K Sood and Rohit Bansal

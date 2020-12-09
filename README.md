@@ -1,4 +1,4 @@
-![Screenshot](strafer.png)
+![Screenshot](images/strafer.png)
 
 
 # Strafer

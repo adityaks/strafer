@@ -1,4 +1,4 @@
-$ python strafer.py 94.250.XX.YY 9200 verify_auth
+$ python strafer.py 121.196.191.180 9200 verify_auth
 	-----------------------------------------------------------
   
 
@@ -20,50 +20,15 @@ $ python strafer.py 94.250.XX.YY 9200 verify_auth
 
 
 [#] Checking the <GEOIP> status of the Elasticsearch instance ......
-[*] Elasticsearch instance is located in <US> | <America/Los_Angeles>
+[*] Elasticsearch instance is located in <CN> | <Asia/Shanghai>
 
-[*] elasticsearch url is constructed as: 94.250.XX.YY:9200
-
-[*] validating authentication: if interface is open to access..
-
-[*] authentication is not in  place for the elasticsearch instance: http://94.250.XX.YY:9200/
-
-[*] security exception occurred: missing authentication credentials
-
-{"error":{"root_cause":[{"type":"security_exception","reason":"missing authentication credentials for REST request [/]","header":{"WWW-Authenticate":"Basic realm=\"security\" charset=\"UTF-8\""}}],"type":"security_exception","reason":"missing authentication credentials for REST request [/]","header":{"WWW-Authenticate":"Basic realm=\"security\" charset=\"UTF-8\""}},"status":401}
-[*] -------------------------------------------------------------------------
-
-$ python strafer.py 121.196.XX.YY 9200 verify_auth
-	-----------------------------------------------------------
-  
-
-
-		   _____  __                ____           
-		  / ___/ / /_ _____ ____ _ / __/___   _____
-		  \__ \ / __// ___// __ `// /_ / _ \ / ___/
-		 ___/ // /_ / /   / /_/ // __//  __// /    
-		/____/ \__//_/    \__,_//_/   \___//_/     
-                                           
-
-	STRAFER : A Tool to Detect Potential Infections in ElasticSearch Deployments !
-        Authored by: Aditya K Sood {https://adityaksood.com} 
-        
-	----------------------------------------------------------
-[*] [------------------------------------------------------------]
-[*] [     ELASTICSEARCH Infections / Honeypot Detection Tool     ]
-[*] [------------------------------------------------------------]
-
-
-[#] Checking the <GEOIP> status of the Elasticsearch instance ......
-[*] Elasticsearch instance is located in <US> | <America/Los_Angeles>
-
-[*] elasticsearch url is constructed as: 121.196.XX.YY:9200
+[*] elasticsearch url is constructed as: 121.196.191.180:9200
 
 [*] validating authentication: if interface is open to access..
 
 [*] seems like the elasticsearch interface is exposed....
 
-[*] valid URL configuration is: http://121.196.XX.YY:9200/
+[*] valid URL configuration is: http://121.196.191.180:9200/
 
 {
   "name" : "node-1",
@@ -82,3 +47,4 @@ $ python strafer.py 121.196.XX.YY 9200 verify_auth
   },
   "tagline" : "You Know, for Search"
 }
+

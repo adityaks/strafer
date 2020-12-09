@@ -1,0 +1,79 @@
+$ python strafer.py 67.205.87.77 9200 verify_auth
+	-----------------------------------------------------------
+  
+
+
+		   _____  __                ____           
+		  / ___/ / /_ _____ ____ _ / __/___   _____
+		  \__ \ / __// ___// __ `// /_ / _ \ / ___/
+		 ___/ // /_ / /   / /_/ // __//  __// /    
+		/____/ \__//_/    \__,_//_/   \___//_/     
+                                           
+
+	STRAFER : A Tool to Detect Potential Infections in ElasticSearch Deployments !
+        Authored by: Aditya K Sood {https://adityaksood.com} 
+        
+	----------------------------------------------------------
+[*] [------------------------------------------------------------]
+[*] [     ELASTICSEARCH Infections / Honeypot Detection Tool     ]
+[*] [------------------------------------------------------------]
+
+
+[#] Checking the <GEOIP> status of the Elasticsearch instance ......
+[*] Elasticsearch instance is located in <CA> | <America/Toronto>
+
+[*] elasticsearch url is constructed as: 67.205.87.77:9200
+
+[*] validating authentication: if interface is open to access..
+
+[*] seems like the elasticsearch interface is exposed....
+
+[*] valid URL configuration is: http://67.205.87.77:9200/
+
+{
+  "status" : 200,
+  "name" : "USNYES01",
+  "cluster_name" : "elasticsearch",
+  "version" : {
+    "number" : "1.4.1",
+    "build_hash" : "b88f43fc40b0bcd7f173a1f9ee2e97816de80b19",
+    "build_timestamp" : "2015-07-29T09:54:16Z",
+    "build_snapshot" : false,
+    "lucene_version" : "4.10.4"
+  },
+  "tagline" : "You Know, for Search"
+}
+[*] enumerating data from the remote elasticsearch instance .........
+
+[*] dumping the contents of: _cat/nodes
+[*] ---------------------------------------
+
+67.205.103.80 9 96 99 1.51 1.58 1.54 dim * 79cc84ce5091
+
+[*] dumping the contents of: _cat/indices
+[*] ---------------------------------------
+
+yellow open 1cf0aa9d61f185b59f643939f862c01f89b21360 d_g1c8IASCGdhuFwcEh5WA 1 1 30 0 13.1kb 13.1kb
+yellow open db18744ea5570fa9bf868df44fecd4b58332ff24 _W3iCnnaQKyKnJsF7HD7Eg 1 1  6 0    4kb    4kb
+
+[*] dumping the contents of: _cat/master
+[*] ---------------------------------------
+
+{"error":{"root_cause":[{"type":"index_not_found_exception","reason":"no such index [_cat]","resource.type":"index_or_alias","resource.id":"_cat","index_uuid":"_na_","index":"_cat"}],"type":"index_not_found_exception","reason":"no such index [_cat]","resource.type":"index_or_alias","resource.id":"_cat","index_uuid":"_na_","index":"_cat"},"status":404}
+[*] dumping the contents of: _cat/tasks
+[*] ---------------------------------------
+
+{"error":{"root_cause":[{"type":"index_not_found_exception","reason":"no such index [_cat]","resource.type":"index_or_alias","resource.id":"_cat","index_uuid":"_na_","index":"_cat"}],"type":"index_not_found_exception","reason":"no such index [_cat]","resource.type":"index_or_alias","resource.id":"_cat","index_uuid":"_na_","index":"_cat"},"status":404}
+[*] dumping the contents of: _cat/shards
+[*] ---------------------------------------
+
+{"error":{"root_cause":[{"type":"index_not_found_exception","reason":"no such index [_cat]","resource.type":"index_or_alias","resource.id":"_cat","index_uuid":"_na_","index":"_cat"}],"type":"index_not_found_exception","reason":"no such index [_cat]","resource.type":"index_or_alias","resource.id":"_cat","index_uuid":"_na_","index":"_cat"},"status":404}
+[*] dumping the contents of: /_search?pretty
+[*] ---------------------------------------
+
+{"took":9,"timed_out":false,"_shards":{"total":47,"successful":47,"failed":0},"hits":{"total":1,"max_score":1.0,"hits":[{"_index":".kibana","_type":"index-pattern","_id":"logstash-*","_score":1.0,"_source":{"title":"logstash-*","timeFieldName":"@timestamp","customFormats":"{}","fields":"[{\"type\":\"string\",\"indexed\":true,\"analyzed\":true,\"doc_values\":false,\"name\":\"host\",\"count\":0},{\"type\":\"string\",\"indexed\":false,\"analyzed\":false,\"name\":\"_source\",\"count\":0},{\"type\":\"string\",\"indexed\":true,\"analyzed\":false,\"doc_values\":false,\"name\":\"message.raw\",\"count\":0},{\"type\":\"string\",\"indexed\":false,\"analyzed\":false,\"name\":\"_index\",\"count\":0},{\"type\":\"string\",\"indexed\":true,\"analyzed\":false,\"doc_values\":false,\"name\":\"@version\",\"count\":0},{\"type\":\"string\",\"indexed\":true,\"analyzed\":true,\"doc_values\":false,\"name\":\"message\",\"count\":0},{\"type\":\"date\",\"indexed\":true,\"analyzed\":false,\"doc_values\":false,\"name\":\"@timestamp\",\"count\":0},{\"type\":\"string\",\"indexed\":true,\"analyzed\":false,\"name\":\"_type\",\"count\":0},{\"type\":\"string\",\"indexed\":true,\"analyzed\":false,\"name\":\"_id\",\"count\":0},{\"type\":\"string\",\"indexed\":true,\"analyzed\":false,\"doc_values\":false,\"name\":\"host.raw\",\"count\":0},{\"type\":\"geo_point\",\"indexed\":true,\"analyzed\":false,\"doc_values\":false,\"name\":\"geoip.location\",\"count\":0}]"}}]}}
+[*] dumping the contents of: _cat/health
+[*] ---------------------------------------
+
+{"error":{"root_cause":[{"type":"index_not_found_exception","reason":"no such index [_cat]","resource.type":"index_or_alias","resource.id":"_cat","index_uuid":"_na_","index":"_cat"}],"type":"index_not_found_exception","reason":"no such index [_cat]","resource.type":"index_or_alias","resource.id":"_cat","index_uuid":"_na_","index":"_cat"},"status":404}
+[*] request processed successfully ! exiting !

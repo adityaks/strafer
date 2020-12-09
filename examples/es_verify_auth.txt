@@ -48,3 +48,260 @@ $ python strafer.py 121.196.191.180 9200 verify_auth
   "tagline" : "You Know, for Search"
 }
 
+[*] enumerating data from the remote elasticsearch instance .........
+
+[*] dumping the contents of: _cat/nodes
+[*] ---------------------------------------
+
+172.21.27.117 20 21 0 0.00 0.01 0.05 cdhimrstw * node-1
+
+[*] dumping the contents of: _cat/indices
+[*] ---------------------------------------
+
+green open detail xIX6gQ1YQV2RJW9YPiGLWA 1 0 27 0 67.8kb 67.8kb
+
+[*] dumping the contents of: _cat/master
+[*] ---------------------------------------
+
+EWBbrCcfQz2N4jK-YIlMUA 172.21.27.117 172.21.27.117 node-1
+
+[*] dumping the contents of: _cat/tasks
+[*] ---------------------------------------
+
+cluster:monitor/tasks/lists    EWBbrCcfQz2N4jK-YIlMUA:138220 -                             transport 1607487528549 04:18:48 118.1micros 172.21.27.117 node-1
+cluster:monitor/tasks/lists[n] EWBbrCcfQz2N4jK-YIlMUA:138221 EWBbrCcfQz2N4jK-YIlMUA:138220 direct    1607487528549 04:18:48 67.7micros  172.21.27.117 node-1
+
+[*] dumping the contents of: _cat/shards
+[*] ---------------------------------------
+
+detail 0 p STARTED 27 67.8kb 172.21.27.117 node-1
+
+[*] dumping the contents of: /_search?pretty
+[*] ---------------------------------------
+
+{
+  "took" : 1,
+  "timed_out" : false,
+  "_shards" : {
+    "total" : 1,
+    "successful" : 1,
+    "skipped" : 0,
+    "failed" : 0
+  },
+  "hits" : {
+    "total" : {
+      "value" : 27,
+      "relation" : "eq"
+    },
+    "max_score" : 1.0,
+    "hits" : [
+      {
+        "_index" : "detail",
+        "_type" : "_doc",
+        "_id" : "202012081826848274009845",
+        "_score" : 1.0,
+        "_source" : {
+          "did" : "202012081826848274009845",
+          "userKey" : 1000,
+          "operationType" : 17,
+          "money_type" : 1002,
+          "raw_user_id" : 1000,
+          "to_user_id" : -1,
+          "money_number" : 20808.0,
+          "create_time" : "2020-12-08T18:26:39.633+0800",
+          "serial_number" : "202012081826455089971598",
+          "explain" : "系统每日0点凌晨清空昨日释放但未及时使用能量源",
+          "rests" : "0",
+          "marking" : 1
+        }
+      },
+      {
+        "_index" : "detail",
+        "_type" : "_doc",
+        "_id" : "202012081826556804946764",
+        "_score" : 1.0,
+        "_source" : {
+          "did" : "202012081826556804946764",
+          "userKey" : 24305,
+          "operationType" : 17,
+          "money_type" : 1002,
+          "raw_user_id" : 24305,
+          "to_user_id" : -1,
+          "money_number" : 124848.0,
+          "create_time" : "2020-12-08T18:26:39.683+0800",
+          "serial_number" : "202012081826643273154749",
+          "explain" : "系统每日0点凌晨清空昨日释放但未及时使用能量源",
+          "rests" : "0",
+          "marking" : 1
+        }
+      },
+      {
+        "_index" : "detail",
+        "_type" : "_doc",
+        "_id" : "202012081826729946662885",
+        "_score" : 1.0,
+        "_source" : {
+          "did" : "202012081826729946662885",
+          "userKey" : 24306,
+          "operationType" : 17,
+          "money_type" : 1002,
+          "raw_user_id" : 24306,
+          "to_user_id" : -1,
+          "money_number" : 439049.0,
+          "create_time" : "2020-12-08T18:26:39.732+0800",
+          "serial_number" : "202012081826105240615513",
+          "explain" : "系统每日0点凌晨清空昨日释放但未及时使用能量源",
+          "rests" : "0",
+          "marking" : 1
+        }
+      },
+      {
+        "_index" : "detail",
+        "_type" : "_doc",
+        "_id" : "202012081826971503920824",
+        "_score" : 1.0,
+        "_source" : {
+          "did" : "202012081826971503920824",
+          "userKey" : 24313,
+          "operationType" : 17,
+          "money_type" : 1002,
+          "raw_user_id" : 24313,
+          "to_user_id" : -1,
+          "money_number" : 208082.0,
+          "create_time" : "2020-12-08T18:26:39.781+0800",
+          "serial_number" : "202012081826749456543437",
+          "explain" : "系统每日0点凌晨清空昨日释放但未及时使用能量源",
+          "rests" : "0",
+          "marking" : 1
+        }
+      },
+      {
+        "_index" : "detail",
+        "_type" : "_doc",
+        "_id" : "202012081826528952468307",
+        "_score" : 1.0,
+        "_source" : {
+          "did" : "202012081826528952468307",
+          "userKey" : 24315,
+          "operationType" : 17,
+          "money_type" : 1002,
+          "raw_user_id" : 24315,
+          "to_user_id" : -1,
+          "money_number" : 208082.0,
+          "create_time" : "2020-12-08T18:26:39.831+0800",
+          "serial_number" : "202012081826222712428628",
+          "explain" : "系统每日0点凌晨清空昨日释放但未及时使用能量源",
+          "rests" : "0",
+          "marking" : 1
+        }
+      },
+      {
+        "_index" : "detail",
+        "_type" : "_doc",
+        "_id" : "202012081826785014108931",
+        "_score" : 1.0,
+        "_source" : {
+          "did" : "202012081826785014108931",
+          "userKey" : 24319,
+          "operationType" : 17,
+          "money_type" : 1002,
+          "raw_user_id" : 24319,
+          "to_user_id" : -1,
+          "money_number" : 208082.0,
+          "create_time" : "2020-12-08T18:26:39.883+0800",
+          "serial_number" : "202012081826780253358665",
+          "explain" : "系统每日0点凌晨清空昨日释放但未及时使用能量源",
+          "rests" : "0",
+          "marking" : 1
+        }
+      },
+      {
+        "_index" : "detail",
+        "_type" : "_doc",
+        "_id" : "202012081841514918539817",
+        "_score" : 1.0,
+        "_source" : {
+          "did" : "202012081841514918539817",
+          "userKey" : 24306,
+          "operationType" : 11,
+          "money_type" : 1002,
+          "raw_user_id" : -1,
+          "to_user_id" : 24306,
+          "money_number" : 260102.04,
+          "create_time" : "2020-12-08T18:41:46.332+0800",
+          "serial_number" : "202012081841452086203080",
+          "explain" : "系统每日0点凌晨根据生命元数据按比例释放能量元",
+          "rests" : "0",
+          "marking" : 0
+        }
+      },
+      {
+        "_index" : "detail",
+        "_type" : "_doc",
+        "_id" : "202012081841839470380431",
+        "_score" : 1.0,
+        "_source" : {
+          "did" : "202012081841839470380431",
+          "userKey" : 24313,
+          "operationType" : 11,
+          "money_type" : 1002,
+          "raw_user_id" : -1,
+          "to_user_id" : 24313,
+          "money_number" : 260102.04,
+          "create_time" : "2020-12-08T18:41:46.570+0800",
+          "serial_number" : "202012081841767333000713",
+          "explain" : "系统每日0点凌晨根据生命元数据按比例释放能量元",
+          "rests" : "0",
+          "marking" : 0
+        }
+      },
+      {
+        "_index" : "detail",
+        "_type" : "_doc",
+        "_id" : "202012081841105853617641",
+        "_score" : 1.0,
+        "_source" : {
+          "did" : "202012081841105853617641",
+          "userKey" : 24315,
+          "operationType" : 11,
+          "money_type" : 1002,
+          "raw_user_id" : -1,
+          "to_user_id" : 24315,
+          "money_number" : 260102.04,
+          "create_time" : "2020-12-08T18:41:46.767+0800",
+          "serial_number" : "202012081841107743025951",
+          "explain" : "系统每日0点凌晨根据生命元数据按比例释放能量元",
+          "rests" : "0",
+          "marking" : 0
+        }
+      },
+      {
+        "_index" : "detail",
+        "_type" : "_doc",
+        "_id" : "202012081841226047518678",
+        "_score" : 1.0,
+        "_source" : {
+          "did" : "202012081841226047518678",
+          "userKey" : 24319,
+          "operationType" : 11,
+          "money_type" : 1002,
+          "raw_user_id" : -1,
+          "to_user_id" : 24319,
+          "money_number" : 260102.04,
+          "create_time" : "2020-12-08T18:41:46.862+0800",
+          "serial_number" : "202012081841887678385667",
+          "explain" : "系统每日0点凌晨根据生命元数据按比例释放能量元",
+          "rests" : "0",
+          "marking" : 0
+        }
+      }
+    ]
+  }
+}
+
+[*] dumping the contents of: _cat/health
+[*] ---------------------------------------
+
+1607487532 04:18:52 yuanpinhui green 1 1 1 1 0 0 0 0 - 100.0%
+
+[*] request processed successfully ! exiting !

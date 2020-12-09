@@ -1,4 +1,4 @@
-$ python strafer.py 47.98.XX.YY 9200 meow_bot
+$ python strafer.py 47.98.194.104 9200 meow_bot
 	-----------------------------------------------------------
   
 
@@ -20,15 +20,15 @@ $ python strafer.py 47.98.XX.YY 9200 meow_bot
 
 
 [#] Checking the <GEOIP> status of the Elasticsearch instance ......
-[*] Elasticsearch instance is located in <US> | <America/Los_Angeles>
+[*] Elasticsearch instance is located in <CA> | <America/Toronto>
 
-[*] elasticsearch url is constructed as: 47.98.XX.YY:9200
+[*] elasticsearch url is constructed as: 47.98.194.104:9200
 
 
 
 [*] executing detection logic for checking [MEOW Bot]  infections  ...........
 
-[*] valid URL configuration is: http://47.98.XX.YY:9200/_cat/indices?v&health=yellow
+[*] valid URL configuration is: http://47.98.194.104:9200/_cat/indices?v&health=yellow
 
 [#] detected indices are in yellow state ... potential missing replica shards
 [#] despite in yellow state, indices support open operation
@@ -40,18 +40,29 @@ $ python strafer.py 47.98.XX.YY 9200 meow_bot
 
 
 health status index           uuid                   pri rep docs.count docs.deleted store.size pri.store.size
-yellow open   .kibana         QD-QeLU7ThKVf9yQphuScg   1   1          1            0        4kb            4kb
-yellow open   4fwi9st42u-meow uOuhpgsfRBSUVKr-JtGavA   1   1          0            0       283b           283b
-yellow open   wpendns4be-meow 5Ejfpf3xTTO-95CgObYL0A   1   1          0            0       283b           283b
-yellow open   b3sxksmbsh-meow vEAalKUdSamQBlqwC_-tYA   1   1          0            0       283b           283b
-yellow open   ak3v2d9bva-meow F1HfEa--T9aVacLgJurbWg   1   1          0            0       283b           283b
-yellow open   tj1ya6ldph-meow 7gD8GGGVRtuaSWaXKzzYkA   1   1          0            0       283b           283b
-yellow open   d83rbdhq6x-meow XPKl4dbCSkmpCgTN2M9LjA   1   1          0            0       283b           283b
-yellow open   oigdrgm3tn-meow eu7urXvuQHS9eXMTfle3Ng   1   1          0            0       283b           283b
-yellow open   users           S-hY0ioYREGuH10Va8drHw   1   1          2            0      8.4kb          8.4kb
-yellow open   nncir8xw0d-meow LlIoNLWYQROxAiwy62Ztbg   1   1          0            0       283b           283b
-yellow open   mwiu09xvc0-meow dEvhh7HCS0eUjKe2NxiRjg   1   1          0            0       283b           283b
+yellow open   bjytypxibp-meow 5rSfLey6TaSLmliz0lexng   5   1          0            0      1.2kb          1.2kb
+yellow open   k4gim4k7fh-meow CoeUR7htS3ClFsJSi9WsxQ   5   1          0            0      1.2kb          1.2kb
+yellow open   5d9vpzo4tx-meow snMyH4TxTL2z6YJoe5P_mg   5   1          0            0      1.2kb          1.2kb
+yellow open   ckzgfecitb-meow YamPstERTHyLssxAgpwGLg   5   1          0            0      1.2kb          1.2kb
+yellow open   13dlxtozk4-meow t3PZiM3_RROzc0e1pHr2Sg   5   1          0            0      1.2kb          1.2kb
+yellow open   pv931wluza-meow UcXjx-8CT3OtZ9mBgMVqOg   5   1          0            0      1.2kb          1.2kb
+yellow open   bzujfnv737-meow 7VPjzVUBQAyKFgln3FILzA   5   1          0            0      1.2kb          1.2kb
+yellow open   xseboa42up-meow HfBvo-RgSwyWt7CTKug8sQ   5   1          0            0      1.2kb          1.2kb
+yellow open   21y56gdqps-meow 7_9Y6V6lQfiMM6NfA3gaWw   5   1          0            0      1.2kb          1.2kb
+yellow open   6o4nn1hf37-meow pTa6_bH4TQSHDVZ42aCCSQ   5   1          0            0      1.2kb          1.2kb
+yellow open   r0gz58ksvk-meow KS07NffiRYCRlMt-moqGOw   5   1          0            0      1.2kb          1.2kb
+yellow open   9q271vuqb9-meow zT3TPjPkS6KpwN-4tPzPHA   5   1          0            0      1.2kb          1.2kb
+yellow open   y4nwgttipe-meow KraRB7AmRX22rOb5nabdyw   5   1          0            0      1.2kb          1.2kb
+yellow open   daidai          Xv9byS72RBCO5qgyI6dq5Q   5   1        232           25    357.7kb        357.7kb
+yellow open   oakrpp6571-meow knxH5tenQ0ez0L_W5jJXpg   5   1          0            0      1.2kb          1.2kb
+yellow open   5l22seb2to-meow 0IzriwOgRQuYpya6fvzSYA   5   1          0            0      1.2kb          1.2kb
+yellow open   n4uf6lydva-meow zmRnF5bdTlatch0B29ktYg   5   1          0            0      1.2kb          1.2kb
+yellow open   nf8ewz00hh-meow ffTlSmnqR8-ylpWTxCwtAg   5   1          0            0      1.2kb          1.2kb
+yellow open   m1unvfk56g-meow o0j-j5bJQteaXacbHfOdwA   5   1          0            0      1.2kb          1.2kb
+yellow open   qdq755jjv5-meow RznMSt_HTj6Sw29Xjhowng   5   1          0            0      1.2kb          1.2kb
+yellow open   ngzkw89fxx-meow uI62YivfRvu-IttaEqFL3g   5   1          0            0      1.2kb          1.2kb
+yellow open   3isev04mlj-meow GpStvf1gQ_6Et5gGpnpdxQ   5   1          0            0      1.2kb          1.2kb
+yellow open   84yw2k3isz-meow gl1YXnUWTuC0XIRrPU-63g   5   1          0            0      1.2kb          1.2kb
 
 
 [*] request processed successfully ! exiting !
-

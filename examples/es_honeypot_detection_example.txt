@@ -1,4 +1,4 @@
-$ python strafer.py 67.205.XX.YY 9200 eshoney_hp
+$ python strafer.py 67.205.87.77 9200 eshoney_hp
 	-----------------------------------------------------------
   
 
@@ -20,12 +20,12 @@ $ python strafer.py 67.205.XX.YY 9200 eshoney_hp
 
 
 [#] Checking the <GEOIP> status of the Elasticsearch instance ......
-[*] Elasticsearch instance is located in <US> | <America/Los_Angeles>
+[*] Elasticsearch instance is located in <CA> | <America/Toronto>
 
-[*] elasticsearch url is constructed as: 67.205.XX.YY:9200
+[*] elasticsearch url is constructed as: 67.205.87.77:9200
 
 [*] starting ---[ROUND 1]--- detecting indicators for Elastisearch ELASTICHONEY Honeypot..........
-[*] valid URL configuration is: http://67.205.XX.YY:9200/
+[*] valid URL configuration is: http://67.205.87.77:9200/
 
 [#] detected buildhash for elastichoney: (build_hash: b88f43fc40b0bcd7f173a1f9ee2e97816de80b19)
 [#] detected hardcoded name for elastichoney: (name: USNYES)
@@ -34,7 +34,7 @@ $ python strafer.py 67.205.XX.YY 9200 eshoney_hp
 
 
 [*] starting ---[ROUND 2]--- detecting indicators for Elastisearch ELASTICHONEY Honeypot..........
-[*] valid URL configuration is: http://67.205.XX.YY:9200/_security/_authenticate
+[*] valid URL configuration is: http://67.205.87.77:9200/_security/_authenticate
 
 [#] detected specific indicator for elastichoney <index_not_found_exception> occured for: _security/_authenticate resource -- STRANGE!
 [#] detected specific indicator for elastichoney <400> occured for: _security/_authenticate resource -- STRANGE!
@@ -43,7 +43,7 @@ $ python strafer.py 67.205.XX.YY 9200 eshoney_hp
 
 
 [*] starting ---[ROUND 3]--- detecting indicators for Elastisearch ELASTICHONEY Honeypot.........
-[*] valid URL configuration is: http://67.205.XX.YY:9200/_cat/indices
+[*] valid URL configuration is: http://67.205.87.77:9200/_cat/indices
 
 [#] detected index for elastichoney: (index_name: 1cf0aa9d61f185b59f643939f862c01f89b21360)
 [#] detected index for elastichoney: (index_name: db18744ea5570fa9bf868df44fecd4b58332ff24)
@@ -53,4 +53,3 @@ $ python strafer.py 67.205.XX.YY 9200 eshoney_hp
 
 
 [*] request processed successfully ! exiting !
-

@@ -8,7 +8,7 @@ Elasticsearch infections are rising exponentially. The adversaries are exploitin
 * Elasticsearch instance information gathering and reconnaissance
 * Elasticsearch instance exposure on the Internet
 * Detecting potential ransomware infections in the Elasticsearch instances
-* Detecting potential botnet infections such as meow botnet.
+* Detecting potential botnet infections such as meow botnet
 * Detecting infected indices in the Elasticsearch instances
 * Detecting Elasticsearch honeypots
 
